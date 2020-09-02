@@ -16,6 +16,7 @@ public class SelectionSorting {
         for (int index = 0; index < size; index++) {
             arrayOfRandomNumbers[index] = scanner.nextInt();
         }
+        scanner.close();
         for (int precedingIndex = 0; precedingIndex < size - 1; precedingIndex++) {
             for (int succeedingIndex = precedingIndex + 1; succeedingIndex < size; succeedingIndex++) {
                 if (arrayOfRandomNumbers[precedingIndex] > arrayOfRandomNumbers[succeedingIndex]) {
